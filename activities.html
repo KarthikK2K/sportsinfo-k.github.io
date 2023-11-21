@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Activities</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    li {
+      background-color: #ddd;
+      margin-right: 10px;
+      margin-bottom: 10px; /* Add margin at the bottom to separate rows */
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .activity-details {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .activity-image {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 5px;
+    }
+    #username-container{
+        text-align: right;
+    }
+    nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  #players-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .player-card {
+      flex: 0 0 auto;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .player-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .player-name {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sports Activities</h1>
+    <div id="username-container"></div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+  <section>
+    <ul>
+        <li>
+            <img src="sport1.jpg" alt="Cricket" class="activity-image">
+            <div class="activity-details">
+              <h2>Cricket</h2>
+              <h3>Players</h3>
+              <div id="players-container">
+                <div class="player-card">
+                  <img class="player-image" src="players/virat.jpg" alt="Player 1">
+                  <div class="player-name">Virat Kholi</div>
+                </div>
+                <div class="player-card">
+                  <img class="player-image" src="players/rohit.jpg" alt="Player 2">
+                  <div class="player-name">Rohit Sharma</div>
+                </div>
+                <div class="player-card">
+                    <img class="player-image" src="players/shubman.jpg" alt="Player 3">
+                    <div class="player-name">Shubman Gill</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/shreyas.jpg" alt="Player 4">
+                    <div class="player-name">Shreyas Iyer</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/suryakumar.jpg" alt="Player 5">
+                    <div class="player-name">Suryakumar Yadav </div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/rahul.jpg" alt="Player 6">
+                    <div class="player-name">KL Rahul</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/jadeja.jpg" alt="Player 7">
+                    <div class="player-name">Ravindra Jadeja</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/kuldeep.jpg" alt="Player 8">
+                    <div class="player-name">Kuldeep Yadav</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/shami.jpg" alt="Player 9">
+                    <div class="player-name">Mohammed Shami</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/bumrah.jpg" alt="Player 10">
+                    <div class="player-name">Jasprit Bumrah</div>
+                  </div>
+                  <div class="player-card">
+                    <img class="player-image" src="players/siraj.jpg" alt="Player 11">
+                    <div class="player-name">Mohammed Siraj</div>
+                  </div>
+            </div>
+          </li>
+      <li>
+        <img src="football.jpg" alt="Football" class="activity-image">
+        <div class="activity-details">
+          <h2>Football</h2>
+          <h3>Players</h3>
+          <div id="players-container">
+            <div class="player-card">
+              <img class="player-image" src="players/messi.jpg" alt="Player 1">
+              <div class="player-name">Lionel Messi</div>
+            </div>
+            <div class="player-card">
+                <img class="player-image" src="players/neymar.jpg" alt="Player 2">
+                <div class="player-name">Neymar</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/ronaldo.jpg" alt="Player 3">
+                <div class="player-name">Cristiano Ronaldo</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/haaland.jpg" alt="Player 4">
+                <div class="player-name">Haaland</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/karim.jpg" alt="Player 5">
+                <div class="player-name">Karim</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/mbappe.jpg" alt="Player 6">
+                <div class="player-name">Mbappe</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/kevin.jpg" alt="Player 7">
+                <div class="player-name">Kevin</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/luka.jpg" alt="Player 8">
+                <div class="player-name">Luka</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/robert.jpg" alt="Player 9">
+                <div class="player-name">Robert </div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/pogba.jpg" alt="Player 10">
+                <div class="player-name">Paul Pogba</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="players/kante.jpg" alt="Player 11">
+                <div class="player-name">Kante</div>
+              </div>
+          </div>
+        </div>
+      </li>
+      
+      <li>
+        <img src="basketball.jpg" alt="Basketball" class="activity-image">
+        <div class="activity-details">
+          <h2>Basketball</h2>
+          <h3>Players</h3>
+          <div id="players-container">
+            <div class="player-card">
+              <img class="player-image" src="basketball/kobe.jpg" alt="Player 1">
+              <div class="player-name">Kobe Brayant</div>
+            </div>
+            <div class="player-card">
+                <img class="player-image" src="basketball/curry.jpg" alt="Player 2">
+                <div class="player-name">Stephen Curry</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/james.jpg" alt="Player 3">
+                <div class="player-name">Kobe Brayant</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/jordan.jpg" alt="Player 4">
+                <div class="player-name">Michael Jordan</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/shaq.jpg" alt="Player 5">
+                <div class="player-name">Shaqel O Neil</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/bradley.jpg" alt="Player 6">
+                <div class="player-name">Bradley</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/desmond.jpg" alt="Player 7">
+                <div class="player-name">Desmond </div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/emoni.jpg" alt="Player 8">
+                <div class="player-name">Emoni</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/lamelo.jpg" alt="Player 9">
+                <div class="player-name">Lamelo</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/mallik.jpg" alt="Player 10">
+                <div class="player-name">Mallik</div>
+              </div>
+              <div class="player-card">
+                <img class="player-image" src="basketball/trae.jpg" alt="Player 11">
+                <div class="player-name">Tare Young</div>
+              </div>
+          </div>
+        </div>
+      </li>
+      <!-- Add more activities as needed -->
+    </ul>
+  </section>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+
+    // Display the username at the top right corner
+    if (username) {
+      document.getElementById('username-container').innerText = `Welcome, ${username}!`;
+    }
+  </script>
+
+</body>
+</html>

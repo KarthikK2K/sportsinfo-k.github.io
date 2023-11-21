@@ -1,0 +1,105 @@
+body {
+    background-image: url('background-image.jpg'); /* Replace with your actual image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #28a745;
+  }
+
+  .hero {
+    
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .sports-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .sports-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    background-color: #87CEEB;
+  }
+  .sports-card img { 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .sports-card h3 {
+    margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .sports-card {
+      width: 100%;
+    }
+  }
+  .hero h2{
+    background-color: #fa9704;
+    color : #000000;
+  }
+  .hero p{
+    background-color: #fa9704;
+    color : #000000;
+    }
+  .login{
+    border: none;
+    outline: none;
+    padding: 16px 15px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.sports-about-section{
+    text-align: center;
+    padding: 50px 20px;
+}
+.sports-about{
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    background-color: #87CEEB;
+}
